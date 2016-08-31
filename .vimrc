@@ -19,6 +19,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 
 call vundle#end()           
 

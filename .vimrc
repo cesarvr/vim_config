@@ -6,12 +6,9 @@ set shiftwidth=2
 set tabstop=2
 filetype plugin indent on
 
-execute pathogen#infect()
-set background=dark
-colorscheme smyck
-set rtp+=$GOROOT/misc/vim
 
-highlight Normal ctermfg=grey ctermbg=gray
+
+execute pathogen#infect()
 
 call vundle#begin()
 
@@ -25,8 +22,12 @@ Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()           
 
-filetype plugin indent on 
 
+colorscheme molokai
+
+
+" Some useful shorcuts
+" =======================================
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
@@ -56,3 +57,6 @@ function! SwitchWindow(dir)
         return ""
   	endif
 endfunction
+
+" =========================================
+
